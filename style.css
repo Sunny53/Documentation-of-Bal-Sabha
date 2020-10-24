@@ -1,0 +1,110 @@
+html{
+	font-family: 'Noto Sans JP', sans-serif;
+  line-height: 1.5;
+	background-image:url("https://images.unsplash.com/photo-1562116290-cf310c050cf7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=375&q=80");
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+}
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+.section{
+	padding:2%;
+	margin:10%;
+	background:rgba(223, 230, 233,.5);
+	border-radius:25px;
+}
+header{
+	position:sticky;
+	top:0;
+	background:rgba(223, 230, 233,1.0);
+	height:10%;
+	border-radius:10px;
+}	
+#navbar li{
+	display:inline-block;
+}
+#navbar li a{
+	
+	text-decoration:none;
+	color:black;
+	padding:10px 15px;
+	overflow:hidden;
+	
+	transition: all  0.3s ease 0s;
+}
+#navbar li a:hover{
+	color:#D0D7DD;
+	background:white;
+	border-radius:25px;
+	
+}
+
+#title{
+	text-align:center;
+}
+
+
+.sub{
+	color:gray;
+}
+table{
+	float:right;
+	border-collapse: collapse;
+	margin:2rem;
+}
+table, td,th{
+	text-align:left;
+	padding:.5rem;
+	font-size:15px;
+	font-weight:bold;
+}
+
+table td{	
+	color:rgba(44, 62, 80,1.0)
+}
+
+thead th{
+	text-align:center;
+}
+
+tfoot th{
+	text-align:center;
+}
+
+tbody th{
+	color:rgba(108, 92, 21,1.0)
+}
+tr:nth-child(odd){
+	background-color:rgba(243, 156, 18,.7);
+}
+
+tr:nth-child(even){
+	background:rgba(241, 196, 15,.7);	
+}
+
+.quote{
+	display:block;
+	background-color:rgba(255, 241, 201,.7);
+	padding:1em;
+	font-size:1em;
+	width:40%;
+	float:right;
+	margin:1rem;
+	border-radius:25px;
+}
+
+.guru{
+	float:left;
+	width:50%;
+}
+
+h3{
+	text-decoration:underline;
+	font-size:25px;
+}
