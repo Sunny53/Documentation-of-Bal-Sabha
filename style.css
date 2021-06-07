@@ -5,6 +5,7 @@ html{
 	background-repeat: no-repeat;
 	background-size:cover;
 	background-attachment:fixed;
+	font-size: 16px;
 }
 
 *{
@@ -13,12 +14,7 @@ html{
 	box-sizing:border-box;
 }
 
-.section{
-	padding:2%;
-	margin:10%;
-	background:rgba(223, 230, 233,.5);
-	border-radius:25px;
-}
+
 header{
 	position:sticky;
 	top:0;
@@ -53,15 +49,20 @@ header{
 .sub{
 	color:gray;
 }
+
+.schedule{
+	min-width:100vh;
+}
+
 table{
-	float:right;
 	border-collapse: collapse;
-	margin:2rem;
+	margin:2em;
+
+
 }
 table, td,th{
 	text-align:left;
-	padding:.5rem;
-	font-size:15px;
+	padding:.5em;
 	font-weight:bold;
 }
 
@@ -81,30 +82,50 @@ tbody th{
 	color:rgba(108, 92, 21,1.0)
 }
 tr:nth-child(odd){
-	background-color:rgba(243, 156, 18,.7);
+	background-color:#d8b02c;
 }
 
 tr:nth-child(even){
-	background:rgba(241, 196, 15,.7);	
+	background:rgba(165, 140, 40, 0.7);	
 }
 
 .quote{
 	display:block;
 	background-color:rgba(255, 241, 201,.7);
 	padding:1rem;
-	font-size:1rem;
-	width:40%;
-	float:right;
-	margin:1rem;
+	font-size: .9em;
+	margin:1em;
 	border-radius:25px;
+	max-width: 400px;
 }
 
 .guru{
-	float:left;
-	width:50%;
+	max-width:100%;
+	height:auto;
+	max-width: 400px;
 }
+
+.icon{
+	max-width: 200px;
+}
+
 
 h3{
 	text-decoration:underline;
-	font-size:25px;
+	font-size:2em;
+}
+
+article{
+	max-width: 400px;
+}
+
+
+.section{
+	padding:2%;
+	margin:auto;
+	background:rgba(223, 230, 233,.5);
+	border-radius:25px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content:space-evenly;
 }
