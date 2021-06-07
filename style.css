@@ -14,7 +14,11 @@ html{
 	box-sizing:border-box;
 }
 
-
+body{
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-between;
+}
 header{
 	position:sticky;
 	top:0;
@@ -51,13 +55,11 @@ header{
 }
 
 .schedule{
-	min-width:100vh;
+	min: width 100vw;
 }
 
 table{
 	border-collapse: collapse;
-	margin:2em;
-
 
 }
 table, td,th{
@@ -94,13 +96,11 @@ tr:nth-child(even){
 	background-color:rgba(255, 241, 201,.7);
 	padding:1rem;
 	font-size: .9em;
-	margin:1em;
 	border-radius:25px;
 	max-width: 400px;
 }
 
 .guru{
-	max-width:100%;
 	height:auto;
 	max-width: 400px;
 }
@@ -122,6 +122,7 @@ article{
 
 .section{
 	padding:2%;
+	max-width:1000px;
 	margin:auto;
 	background:rgba(223, 230, 233,.5);
 	border-radius:25px;
