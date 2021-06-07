@@ -15,6 +15,7 @@ html{
 }
 
 body{
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 	display: flex;
 	flex-flow: column wrap;
 	justify-content: space-between;
@@ -55,16 +56,24 @@ header{
 }
 
 .schedule{
-	min: width 100vw;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 table{
 	border-collapse: collapse;
-
+	font-size: .9em;
+	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+@media screen and (max-width: 330px){
+	.schedule{
+		display: none;
+	}
+}
+
 table, td,th{
 	text-align:left;
-	padding:.5em;
 	font-weight:bold;
 }
 
@@ -92,8 +101,10 @@ tr:nth-child(even){
 }
 
 .quote{
+	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 	display:block;
 	background-color:rgba(255, 241, 201,.7);
+	color: #251205;
 	padding:1rem;
 	font-size: .9em;
 	border-radius:25px;
@@ -102,7 +113,8 @@ tr:nth-child(even){
 
 .guru{
 	height:auto;
-	max-width: 400px;
+	max-width: 100%;
+	padding: 25px;
 }
 
 .icon{
@@ -121,7 +133,7 @@ article{
 
 
 .section{
-	padding:100px 10px 100px 10px;
+	padding:70px 10px 70px 10px;
 	max-width:1000px;
 	margin:auto;
 	background:rgba(223, 230, 233,.5);
