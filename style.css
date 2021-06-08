@@ -27,27 +27,43 @@ header{
 	border-radius:10px;
 	
 }	
-#navbar li{
-	display:inline-block;
+li{
+	list-style: none;
 }
-#navbar li a{
-	
-	text-decoration:none;
-	color:black;
-	padding:10px 15px;
-	overflow:hidden;
-	
-	transition: all  0.3s ease 0s;
+a{
+	text-decoration: none;
 }
-#navbar li a:hover{
+
+.navbar{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 1rem 1.5rem;
+}
+
+.nav-menu {
+    display: flex;
+	justify-content: center;
+    align-items: center;
+}
+
+.nav-link{
+	display: block;
+    padding: 10px;
+    color: #475569;
+}
+
+.nav-link:hover{
 	color:#D0D7DD;
 	background:white;
 	border-radius:25px;
-	
 }
 
 #title{
 	text-align:center;
+	background-color: rgb(206, 206, 236);
+	border-radius: 75px;
+	padding: .50rem;
 }
 
 
@@ -109,16 +125,19 @@ tr:nth-child(even){
 	font-size: .9em;
 	border-radius:25px;
 	max-width: 400px;
+	margin: auto;
 }
 
 .guru{
 	height:auto;
 	max-width: 100%;
 	padding: 25px;
+	margin: auto;
 }
 
 .icon{
 	max-width: 200px;
+	margin: auto;
 }
 
 
@@ -133,7 +152,7 @@ article{
 
 
 .section{
-	padding:70px 10px 70px 10px;
+	padding:100px 10px 80px 10px;
 	max-width:1000px;
 	margin:auto;
 	background:rgba(223, 230, 233,.5);
@@ -141,4 +160,63 @@ article{
 	display: flex;
 	flex-flow: row wrap;
 	justify-content:space-evenly;
+}
+
+/* Hamburger CSS */
+
+.hamburger{
+	display: none;
+}
+.bar{
+	display:block;
+	width: 25px;
+	height: 3px;
+	margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	background-color: black;
+}
+
+@media screen and (max-width:768px){
+	.nav-menu{
+		position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color:rgb(238, 252, 255);
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+	.nav-menu.active {
+        left: 0;
+    }
+
+
+	.nav-item{
+		color: black;
+	}
+
+
+	.hamburger{
+		display: block;
+		cursor: pointer;
+	}
+
+	.hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
 }
