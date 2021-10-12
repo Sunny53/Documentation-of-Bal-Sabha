@@ -178,6 +178,7 @@ article{
 
 .hamburger{
 	display: none;
+	margin: 5px;
 }
 .bar{
 	display:block;
@@ -197,7 +198,7 @@ article{
 	.nav-menu{
 		position: fixed;
         left: -100%;
-        top: 6.25em;
+        top: 85px;
         flex-direction: column;
         background-color:rgb(238, 252, 255);
         width: 100%;
@@ -236,4 +237,10 @@ article{
         transform: translateY(-8px) rotate(-45deg);
     }
 
+}
+
+@media screen and (max-width:478px){
+	.nav-menu{
+		top:122px;
+	}
 }
