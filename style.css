@@ -166,8 +166,6 @@ article{
 	padding:100px 10px 80px 10px;
 	max-width:1000px;
 	margin:auto;
-	background:rgba(223, 230, 233,.5);
-	box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.05);
 	border-radius:25px;
 	display: flex;
 	flex-flow: row wrap;
