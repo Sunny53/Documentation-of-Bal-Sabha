@@ -101,6 +101,7 @@ table{
 table, td,th{
 	text-align:left;
 	font-weight:bold;
+	padding: 5px;
 }
 
 table td{	
@@ -159,6 +160,10 @@ h3{
 
 article{
 	max-width: 400px;
+	padding: 15px;
+	background-color: bisque;
+	opacity: .7;
+	z-index: -1;
 }
 
 
